@@ -23,7 +23,7 @@
 			<select
 				ng-model="tag"
 				ng-change="select(tag)"
-				ng-options="tag.name for (name, tag) in selectedTag.subTags"
+				ng-options="tag.name + ' (' + tag.local.length + ')' for (name, tag) in selectedTag.subTags"
 			>
 				<option value="">Refine...</option>
 			</select>
