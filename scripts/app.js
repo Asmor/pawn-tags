@@ -9,5 +9,6 @@ pawnApp.controller("pawnAppController", function ($scope) {
 	$scope.selectedTag = window.root;
 	$scope.select = function (tag) {
 		$scope.selectedTag = tag;
+		$scope.tag = null;
 	};
 });
