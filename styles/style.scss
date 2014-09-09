@@ -1,0 +1,53 @@
+@import 'global';
+@import 'pawns';
+
+// $tag-tree-width: 250px;
+$tag-tree-width: 0;
+$path-height: 30px;
+
+.tag-name {
+	font-weight: bold;
+}
+
+.pawn-info-block {
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.tag-list {
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: $tag-tree-width;
+}
+
+.pawn-display {
+	position: fixed;
+	overflow: auto;
+	top: $path-height;
+	bottom: 0;
+	left: $tag-tree-width;
+	right: 0;
+	padding-left: 10px;
+}
+
+.tag-path {
+	font-weight: bold;
+	font-size: 24px;
+	position: fixed;
+	top: 0;
+	left: $tag-tree-width;
+	right: 0;
+	height: $path-height;
+	padding-left: 20px;
+	background-color: #ffffff;
+
+	&--breadcrumb-name {
+		text-decoration: underline;
+		font-style: italic;
+	}
+}

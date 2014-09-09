@@ -1,0 +1,7 @@
+<div class="pawn-info-block">
+	<span ng-class="pawn.pawnClass"></span>
+	<br>
+	<span ng-if="pawn.qty > 1">{{ pawn.qty }}x </span>{{ pawn.name }}
+	<br>
+	{{ pawn.set }} #{{ pawn.number }}<span ng-if="pawn.sheet > 0"> Sheet {{ pawn.sheet }}</span>
+</div>

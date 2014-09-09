@@ -1,0 +1,7 @@
+<div class="tag-name" ng-click="select(tag)">{{ tag.name }} ({{ tag.local.length }})</div>
+<ul>
+<ul>
+	<li ng-repeat="tag in tag.subTags">
+		<ng-include src="'partials/tag.html'"></ng-include>
+	</li>
+</ul>

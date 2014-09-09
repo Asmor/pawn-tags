@@ -1,0 +1,84 @@
+@for $i from 1 to 17 {
+	.sheet#{$i} {
+		background: url("../images/#{$i}.jpg");
+	}
+}
+
+$smallHeight: 64px;
+$smallWidth: 87px;
+$smallRows: -500px -582px -663px -744px;
+$smallCols: -16px -119px -221px -328px -431px -533px;
+
+$mediumHeight: 145px;
+$mediumWidth: 86px;
+$mediumRows: -17px -178px -340px -501px -663px;
+$mediumCols: -17px -121px -224px -328px -431px -535px;
+
+$largeHeight: 145px;
+$largeWidth: 189px;
+$largeRows: $mediumRows;
+$largeCols: nth($mediumCols, 1) nth($mediumCols, 3) nth($mediumCols, 5);
+
+$hugeHeight: 226px;
+$hugeWidth: 294px;
+$hugeRows: -17px -259px -501px;
+$hugeCols: -17px -326px;
+
+@mixin spin($height, $width) {
+	transform: rotate(.25turn);
+	$diff: ($width - $height) / 2;
+	margin: $diff $diff*-1;
+	border-radius: 20px 0 0 20px;
+}
+
+@mixin coords($rows, $cols) {
+	@for $row from 1 to length($rows) + 1 {
+		@for $col from 1 to length($cols) + 1 {
+			&.row#{$row}.col#{$col} {
+				background-position: nth($cols, $col) nth($rows, $row);
+			}
+		}
+	}
+}
+
+.pawn {
+	display: inline-block;
+}
+
+.no-pawn-available {
+	border: 1px solid #f00;
+	background-color: #fcc;
+	border-radius: 20px 20px 0 0;
+}
+
+.small {
+	height: $smallHeight;
+	width: $smallWidth;
+
+	@include spin($smallHeight, $smallWidth);
+	@include coords($smallRows, $smallCols);
+}
+
+.medium {
+	height: $mediumHeight;
+	width: $mediumWidth;
+
+	@include coords($mediumRows, $mediumCols);
+}
+
+.large {
+	height: $largeHeight;
+	width: $largeWidth;
+
+	@include spin($largeHeight, $largeWidth);
+	@include coords($largeRows, $largeCols);
+}
+
+.huge {
+	height: $hugeHeight;
+	width: $hugeWidth;
+
+	@include spin($hugeHeight, $hugeWidth);
+	@include coords($hugeRows, $hugeCols);
+}
+

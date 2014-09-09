@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="pawnApp">
+<head>
+	<title>Pawn Tags</title>
+	<script src="thirdparty/angular/angular.js"></script>
+	<script src="scripts/tagtree.js"></script>
+	<script src="scripts/pawn.js"></script>
+	<script src="scripts/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body ng-controller="pawnAppController">
+
+<!-- <div class="tag-list">
+	<ng-include ng-repeat="tag in root.subTags" src="'partials/tag.html'"></ng-include>
+</div> -->
+<div class="pawn-display" ng-show="selectedTag">
+	<span class="tag-path">
+		<!-- {{ selectedTag.path }} -->
+		<span class="tag-path--breadcrumb" ng-repeat="tag in selectedTag.parents">
+			<span class="tag-path--breadcrumb-name" ng-click="select(tag)">{{ tag.name }}</span> &gt;
+		</span>
+		{{ selectedTag.name }} ({{ selectedTag.local.length }})
+		<span ng-show="!selectedTag.terminal">
+			<select>
+				<option selected>Refine...</option>
+				<option ng-repeat="tag in selectedTag.subTags" ng-click="select(tag)">{{ tag.name }} ({{ tag.local.length }})</option>
+			</select>
+		</span>
+	</span>
+	<ng-include src="'partials/pawn.html'" ng-repeat="pawn in selectedTag.local"></ng-include>
+</div>
+
+</body>
+</html>
