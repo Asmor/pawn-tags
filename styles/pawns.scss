@@ -1,6 +1,8 @@
-@for $i from 1 to 17 {
-	.sheet#{$i} {
-		background: url("../images/#{$i}.jpg");
+@for $set from 1 to 5 {
+	@for $sheet from 1 to 17 {
+		.BS#{$set}.sheet#{$sheet} {
+			background: url("../images/BS#{$set}/#{$sheet}.jpg");
+		}
 	}
 }
 
