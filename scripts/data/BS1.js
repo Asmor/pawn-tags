@@ -1,3 +1,6 @@
+/* global addPawn */
+"use strict";
+
 addPawn("BS1	1	small	1	12	4	1	Archon, Lantern	Type:Outsider:Good:Archon");
 addPawn("BS1	2	small	4	12	4	2	Bat Swarm	Type:Beast:Flying:Bat, Misc:Swarm");
 addPawn("BS1	3	small	1	12	2	4	Choker	Type:Undead:Corporeal:Ghoul");

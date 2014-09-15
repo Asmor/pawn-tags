@@ -1,3 +1,6 @@
+/* global addPawn */
+"use strict";
+
 addPawn("BS2	1	small	1	0	0	0	Aeon, Paracletus	Type:Outsider:Neutral:Aeon");
 addPawn("BS2	2	small	1	0	0	0	Agathion, Vulpinal	Type:Outsider:Good:Agathion, Type:Humanoid:Beast:Fox");
 addPawn("BS2	3	small	1	0	0	0	Angel, Cassisian	Type:Outsider:Good:Angel");

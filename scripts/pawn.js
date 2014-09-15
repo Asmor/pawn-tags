@@ -1,3 +1,4 @@
+/* exported addPawn */
 /* global root */
 "use strict";
 

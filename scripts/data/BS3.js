@@ -1,3 +1,6 @@
+/* global addPawn */
+"use strict";
+
 addPawn("BS3	38	medium	2	1	1	1	Adaro	Type:Humanoid:Merfolk, Environment:Aquatic");
 addPawn("BS3	39	medium	1	1	1	3	Adherer	Misc:Need to tag");
 addPawn("BS3	40	medium	2	1	1	4	Adlet	Type:Humanoid:Beast:Canine, Environment:Arctic");
