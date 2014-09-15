@@ -26,6 +26,8 @@ $path-height: 0;
 	bottom: 0;
 	left: 0;
 	width: $tag-tree-width;
+	padding-top: 5px;
+	padding-left: 5px;
 }
 
 .pawn-display {
@@ -36,6 +38,7 @@ $path-height: 0;
 	left: $tag-tree-width;
 	right: 0;
 	padding-left: 10px;
+	padding-top: 5px;
 }
 
 .tag-path {

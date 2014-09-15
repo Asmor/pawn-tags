@@ -1,13 +1,19 @@
 $tagBlockBorderRadius: 10px;
+$tagBlockBorderColor: #000;
 
 .tag-block {
 	background-color: #aaa;
-	border: 1px solid red;
+	border: 1px solid $tagBlockBorderColor;
 	border-top: 0;
 	padding: 5px;
 
+	&:hover {
+		background-color: #eaa;
+		cursor: pointer;
+	}
+
 	&__root {
-		border-top: 1px solid red;
+		border-top: 1px solid $tagBlockBorderColor;
 		border-radius: $tagBlockBorderRadius $tagBlockBorderRadius 0 0;
 	}
 
@@ -16,6 +22,11 @@ $tagBlockBorderRadius: 10px;
 
 		&.tag-block__root {
 			border-radius: $tagBlockBorderRadius $tagBlockBorderRadius 0 $tagBlockBorderRadius;
+		}
+
+		&:hover {
+			background-color: #aaa;
+			cursor: auto;
 		}
 	}
 
@@ -26,10 +37,15 @@ $tagBlockBorderRadius: 10px;
 
 .subtag-block {
 	background-color: #ddd;
-	border: 1px solid red;
+	border: 1px solid $tagBlockBorderColor;
 	border-top: 0;
 	padding: 5px;
 	margin-left: 10px;
+
+	&:hover {
+		background-color: #fdd;
+		cursor: pointer;
+	}
 
 	&:last-child {
 		border-radius: 0 0 $tagBlockBorderRadius $tagBlockBorderRadius;
