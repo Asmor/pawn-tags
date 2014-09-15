@@ -1,9 +1,11 @@
 @import 'global';
 @import 'pawns';
+@import 'tagblock';
 
-// $tag-tree-width: 250px;
-$tag-tree-width: 0;
-$path-height: 30px;
+$tag-tree-width: 250px;
+// $tag-tree-width: 0;
+// $path-height: 30px;
+$path-height: 0;
 
 .tag-name {
 	font-weight: bold;
@@ -14,6 +16,7 @@ $path-height: 30px;
 	text-align: center;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	color: #ddd;
 }
 
 .tag-list {
@@ -44,7 +47,7 @@ $path-height: 30px;
 	right: 0;
 	height: $path-height;
 	padding-left: 20px;
-	background-color: #ffffff;
+	color: #ddd;
 
 	&--breadcrumb-name {
 		text-decoration: underline;

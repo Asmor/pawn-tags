@@ -1,0 +1,6 @@
+<div class="tag-block tag-block__selected" ng-class="{'tag-block__root': selectedTag === root, 'tag-block__last': selectedTag.terminal }">
+	{{ selectedTag.name }} ({{ selectedTag.local.length }})
+</div>
+<div class="subtag-block" ng-repeat="tag in selectedTag.subTags" ng-click="select(tag)">
+	{{ tag.name }} ({{ tag.local.length }})
+</div>

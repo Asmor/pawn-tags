@@ -1,0 +1,15 @@
+<span class="tag-path">
+	<span class="tag-path--breadcrumb" ng-repeat="tag in selectedTag.parents">
+		<span class="tag-path--breadcrumb-name" ng-click="select(tag)">{{ tag.name }}</span> &gt;
+	</span>
+	{{ selectedTag.name }} ({{ selectedTag.local.length }})
+	<span ng-show="!selectedTag.terminal">
+		<select
+			ng-model="tag"
+			ng-change="select(tag)"
+			ng-options="tag.name + ' (' + tag.local.length + ')' for (name, tag) in selectedTag.subTags"
+		>
+			<option value="">Refine...</option>
+		</select>
+	</span>
+</span>

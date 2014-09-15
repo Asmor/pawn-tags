@@ -10,11 +10,13 @@ $smallHeight: 64px;
 $smallWidth: 87px;
 $smallRows: -500px -582px -663px -744px;
 $smallCols: -16px -119px -221px -328px -431px -533px;
+$smallCornerRadius: 25px;
 
 $mediumHeight: 145px;
 $mediumWidth: 86px;
 $mediumRows: -17px -178px -340px -501px -663px;
 $mediumCols: -17px -121px -224px -328px -431px -535px;
+$mediumCornerRadius: 30px;
 
 $largeHeight: 145px;
 $largeWidth: 189px;
@@ -30,7 +32,7 @@ $hugeCols: -17px -326px;
 	transform: rotate(.25turn);
 	$diff: ($width - $height) / 2;
 	margin: $diff $diff*-1;
-	border-radius: 20px 0 0 20px;
+	border-radius: $mediumCornerRadius 0 0 $mediumCornerRadius;
 }
 
 @mixin coords($rows, $cols) {
@@ -45,12 +47,12 @@ $hugeCols: -17px -326px;
 
 .pawn {
 	display: inline-block;
+	border-radius: $mediumCornerRadius $mediumCornerRadius 0 0;
 }
 
 .no-pawn-available {
 	border: 1px solid #f00;
 	background-color: #fcc;
-	border-radius: 20px 20px 0 0;
 }
 
 .small {
@@ -59,6 +61,8 @@ $hugeCols: -17px -326px;
 
 	@include spin($smallHeight, $smallWidth);
 	@include coords($smallRows, $smallCols);
+
+	border-radius: $smallCornerRadius 0 0 $smallCornerRadius;
 }
 
 .medium {

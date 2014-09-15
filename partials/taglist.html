@@ -1,0 +1,5 @@
+<div class="tag-list">
+	<!-- <ng-include ng-repeat="tag in root.subTags" src="'partials/tag.html'"></ng-include> -->
+	<ng-include src="'partials/tagblock.html'" ng-repeat="tag in selectedTag.parents"></ng-include>
+	<ng-include src="'partials/selectedtagblock.html'"></ng-include>
+</div>
