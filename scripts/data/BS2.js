@@ -142,7 +142,7 @@ addPawn("BS2	138	medium	1	0	0	0	Winterwight	Type:Undead:Corporeal:Skeleton");
 addPawn("BS2	139	medium	2	0	0	0	Witchfire	Type:Undead:Incorporeal:Shade");
 addPawn("BS2	140	medium	2	0	0	0	Witchwyrd	Type:Outsider:Evil, Misc:Class:Cleric:Evil");
 addPawn("BS2	141	medium	1	0	0	0	Worm That Walks	Type:Outsider:Evil");
-addPawn("BS2	142	medium	3	0	0	0	Zombie, Juju	Type:Undead:Corporeal:Ghoul");
+addPawn("BS2	142	medium	3	0	0	0	Zombie, Juju	Type:Undead:Corporeal:Zombie");
 addPawn("BS2	143	large	1	0	0	0	Achaierai	Type:Weird:Aberration, Type:Undead:Incorporeal:Shade, Type:Elemental:Shadow, Type:Beast:Quadrupedal:Bird");
 addPawn("BS2	144	large	1	0	0	0	Aeon, Bythos	Type:Outsider:Neutral:Aeon, Type:Elemental:Air, Type:Humanoid:Elemental");
 addPawn("BS2	145	large	1	0	0	0	Aeon, Pleroma	Type:Outsider:Neutral:Aeon");

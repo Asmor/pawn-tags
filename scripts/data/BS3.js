@@ -212,4 +212,4 @@ addPawn("BS3	123	medium	1	14	4	6	Wolf-in-Sheep's-Clothing	Type:Weird:Mimic");
 addPawn("BS3	187	large	3	11	3	3	Yithian	Type:Weird:Plant");
 addPawn("BS3	124	medium	1	15	4	5	Yuki-Onna	Type:Undead:Incorporeal:Ghost, Mythology:Oriental");
 addPawn("BS3	35	small	1	16	4	3	Zoog	Misc:Need to tag");
-addPawn("BS3	125	medium	3	15	4	6	Zuvembie	Type:Undead:Zombie");
+addPawn("BS3	125	medium	3	15	4	6	Zuvembie	Type:Undead:Corporeal:Zombie");
