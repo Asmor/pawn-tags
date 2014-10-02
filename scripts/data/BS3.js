@@ -33,7 +33,7 @@ addPawn("BS3	53	medium	3	1	5	2	Catfolk	Type:Humanoid:Beast:Feline");
 addPawn("BS3	54	medium	3	2	1	1	Caulborn	Misc:Need to tag");
 addPawn("BS3	55	medium	3	2	1	4	Cecaelia	Misc:Need to tag");
 addPawn("BS3	56	medium	3	2	2	1	Ceratiodi	Type:Humanoid:Beast:Aquatic:Fish, Environment:Aquatic");
-addPawn("BS3	57	medium	3	2	2	4	Cerberi	Type:Outsider:Evil, Mythology:Greek");
+addPawn("BS3	57	medium	3	2	2	4	Cerberi	Type:Outsider:Evil, Type:Beast:Quadrupedal:Canine, Mythology:Greek");
 addPawn("BS3	58	medium	1	2	3	1	Cerebric Fungus	Type:Weird:Plant:Fungus");
 addPawn("BS3	191	huge	1	12	2	2	Clockwork Leviathan	Type:Weird:Clockwork, Environment:Aquatic");
 addPawn("BS3	59	medium	4	2	3	2	Clockwork Servant	Type:Weird:Clockwork");
