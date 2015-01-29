@@ -17,7 +17,6 @@
 <ng-include src="'partials/taglist.html'"></ng-include>
 
 <div class="pawn-display" ng-show="selectedTag">
-	<!-- <ng-include src="'partials/tagpath.html'"></ng-include> -->
 	<ng-include src="'partials/pawn.html'" ng-repeat="pawn in ::root.local" ng-show="selectedTag.local.indexOf(pawn) !== -1"></ng-include>
 </div>
 
