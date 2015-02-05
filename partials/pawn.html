@@ -1,4 +1,4 @@
-<div class="pawn-info-block">
+<div class="pawn-info-block" title="{{ ::pawn.tags.join('\n') }}">
 	<span ng-class="::pawn.pawnClass"></span>
 	<br>
 	<span ng-if="::pawn.qty > 1">{{ ::pawn.qty }}x </span>{{ ::pawn.name }}
